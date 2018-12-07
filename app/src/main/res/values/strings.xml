@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+
+    <string name="intro">Welcome to the Potpourri Quiz</string>
+    <string name="intro2">The place where all manner of questions exist!</string>
+    <string name="intro3">Do your best to get everything correct!</string>
+    <string name="intro4">Remember it gets harder!</string>
+    <string name="click1">Click me!</string>
+
+    <string name="coffee">Coffee</string>
+    <string name="cappucino">Cappucino</string>
+    <string name="mocha">Mocha</string>
+    <string name="java">Java</string>
+
+    <string name="matty">Matt Damon</string>
+    <string name="benny">Benedict Cumberbatch</string>
+    <string name="robby">Robert Downey Jr.</string>
+    <string name="baley">Christian Bale</string>
+
+    <string name="humorless">humorless</string>
+    <string name="hello">hello</string>
+    <string name="justification">justification</string>
+    <string name="jubilee">jubilee</string>
+
+
+</resources>

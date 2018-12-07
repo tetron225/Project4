@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualQuiz">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="#33FFE9"
+            >
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 1"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is the type of computer language used in android development?"
+                    />
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text = "@string/coffee"
+                            android:id="@+id/coffee"
+                            android:onClick="radioClick1"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text = "@string/cappucino"
+                            android:id="@+id/cappucino"
+                            android:onClick="radioClick1"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text = "@string/mocha"
+                            android:id="@+id/mocha"
+                            android:onClick="radioClick1"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text = "Java"
+                            android:id="@+id/java"
+                            android:onClick="radioClick1"
+                            />
+                    </RadioGroup>
+                </FrameLayout>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Enter"
+                    android:onClick="enterButton1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 2"
+                    android:layout_marginTop="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In the movie, 'Doctor Strange', who was the actor that played the main protagonist Doctor Strange? "
+                    />
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    >
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/matty"
+                            android:id="@+id/matt"
+                            android:onClick="radioClick2"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/benny"
+                            android:id="@+id/ben"
+                            android:onClick="radioClick2"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/robby"
+                            android:id="@+id/rob"
+                            android:onClick="radioClick2"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/baley"
+                            android:id="@+id/bale"
+                            android:onClick="radioClick2"
+                            />
+                    </RadioGroup>
+                </FrameLayout>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Enter"
+                    android:onClick="enterButton2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 3"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is this Morse Code displayed below mean in English words?"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=".... . ._.. ._.. ___"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="40sp"
+                    />
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    >
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text = "@string/humorless"
+                            android:id="@+id/humor"
+                            android:onClick="radioClick3"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text = "@string/hello"
+                            android:id="@+id/hello"
+                            android:onClick="radioClick3"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text = "@string/justification"
+                            android:id="@+id/just"
+                            android:onClick="radioClick3"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text = "@string/jubilee"
+                            android:id="@+id/jub"
+                            android:onClick="radioClick3"
+                            />
+                    </RadioGroup>
+                </FrameLayout>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Enter"
+                    android:onClick="enterButton3"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 4"
+                    android:layout_marginTop="20sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check the boxes that are considered fruits!"
+                    />
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Banana"
+                            android:id="@+id/banana"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Apple"
+                            android:id="@+id/apple"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Argentina"
+                            android:id="@+id/arg"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rapids"
+                            android:id="@+id/rapids"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dragonfruit"
+                            android:id="@+id/dragon"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lychee"
+                            android:id="@+id/lychee"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ligenberry"
+                            android:id="@+id/ligen"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Atrociousberry"
+                            android:id="@+id/atro"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Infinity Stone"
+                            android:id="@+id/stone"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+                <Button
+                    android:layout_width="80sp"
+                    android:layout_height="40sp"
+                    android:text="Enter"
+                    android:onClick="enterButton4"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 5"
+                    android:layout_marginTop="20sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is missing in the last grid?"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/questionlogic"
+                    android:layout_marginBottom="15dp"
+                    />
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    >
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/A"
+                            android:drawableRight="@drawable/alpha"
+                            android:onClick="radioClick5"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/B"
+                            android:drawableRight="@drawable/beta"
+                            android:onClick="radioClick5"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/C"
+                            android:drawableRight="@drawable/ceta"
+                            android:onClick="radioClick5"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/D"
+                            android:drawableRight="@drawable/delta"
+                            android:onClick="radioClick5"
+                            />
+
+                    </RadioGroup>
+                </FrameLayout>
+                <Button
+                    android:layout_width="80sp"
+                    android:layout_height="40sp"
+                    android:text="Enter"
+                    android:onClick="enterButton5"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 6"
+                    android:layout_marginTop="20sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What song is played by Weird Al Yankovic?"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/soundA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="play"
+                            android:textSize="7sp"
+                            android:textAlignment="center"
+                            android:id="@+id/play1"
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="pause"
+                            android:textSize="7sp"
+                            android:textAlignment="center"
+                            android:id="@+id/pause1"
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="reset"
+                            android:textSize="7sp"
+                            android:layout_weight="4"
+                            android:textAlignment="center"
+                            android:id="@+id/reset1"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/soundB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="play"
+                            android:textSize="7sp"
+                            android:textAlignment="center"
+                            android:id="@+id/play2"
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="pause"
+                            android:textSize="7sp"
+                            android:textAlignment="center"
+                            android:id="@+id/pause2"
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="reset"
+                            android:textSize="7sp"
+                            android:layout_weight="4"
+                            android:textAlignment="center"
+                            android:id="@+id/reset2"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/soundC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="play"
+                            android:textSize="7sp"
+                            android:textAlignment="center"
+                            android:id="@+id/play3"
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="pause"
+                            android:textSize="7sp"
+                            android:textAlignment="center"
+                            android:id="@+id/pause3"
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="reset"
+                            android:textSize="7sp"
+                            android:layout_weight="4"
+                            android:textAlignment="center"
+                            android:id="@+id/reset3"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/soundD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="play"
+                            android:layout_weight="4"
+                            android:textSize="7sp"
+                            android:textAlignment="center"
+                            android:id="@+id/play4"
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="pause"
+                            android:layout_weight="4"
+                            android:textSize="7sp"
+                            android:textAlignment="center"
+                            android:id="@+id/pause4"
+                            />
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:text="reset"
+                            android:textSize="7sp"
+                            android:layout_weight="4"
+                            android:textAlignment="center"
+                            android:id="@+id/reset4"
+                            />
+
+                    </LinearLayout>
+
+                </RadioGroup>
+                <Button
+                    android:layout_width="80sp"
+                    android:layout_height="40sp"
+                    android:text="Enter"
+                    android:onClick="enterButton6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 7"
+                    android:layout_marginTop="20sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is the meaning of this Latin phrase 'Memento Mori'?"
+                    />
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Input answer here"
+                        android:id="@+id/input"
+                        android:inputType="text"
+                        />
+                </FrameLayout>
+                <Button
+                    android:layout_width="80sp"
+                    android:layout_height="40sp"
+                    android:text="Enter"
+                    android:onClick="enterButton7"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
